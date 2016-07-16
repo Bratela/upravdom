@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'devise'
 # гем для перевода сообщений девайса
 gem 'devise-i18n'
+gem 'font-awesome-rails'
 
 # гем с русскими форматами (времени и пр.)
 gem 'russian'
