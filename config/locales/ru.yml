@@ -1,5 +1,34 @@
 ru:
+  # Перевод моделей
+  activerecord:
+    # Перевод названий аттрибутов моделей
+    attributes:
+      user:
+        email: 'Email'
+        first_name: 'Имя'
+        second_name: 'Фамилия'
+        password: 'Пароль'
+        password_confirmation: 'Подтверждение пароля'
+
+  # Перевод сообщений контроллера
+  controllers:
+    users:
+      updated: 'Профиль был успешно обновлён'
+
+  # Перевод представлений
+  views:
+    users:
+      edit_user: 'Редактировать профиль'
+
   # Перевод названия приложения и компании-разработчика
   app:
     name: 'УправДом'
     company: 'NoNameCompany'
+
+  # Дополнительный перевод Devise
+  devise:
+    # Ссылки
+    links:
+      log_in: 'Войти'
+      sign_up: 'Регистрация'
+      forgot_password: 'Забыли пароль?'

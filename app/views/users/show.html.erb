@@ -1,4 +1,20 @@
-<p id="notice"><%= notice %></p>
+<div class="page-header text-center">
+  <h1><%= @user.first_name %> <%= @user.second_name %></h1>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%# <%= link_to 'Back', users_path %>
+  <p class="buffer-top">
+    <%= link_to I18n.t('views.users.edit_user'), edit_user_path(@user), class: 'btn btn-default' %>
+  </p>
+</div>
+
+<%# Выводим список квартир пользователя %>
+<div class="row">
+  <h3>Квартиры</h3>
+  <ul class="nav nav-list">
+    <li><%= link_to 'Квартира 1' %></li>
+    <li><%= link_to 'Квартира 2' %></li>
+    <li><%= link_to 'Квартира 3' %></li>
+  </ul>
+</div>
+
+
+
