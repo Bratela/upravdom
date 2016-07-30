@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160712203600) do
+ActiveRecord::Schema.define(version: 20160730081903) do
 
   create_table "adresses", force: :cascade do |t|
     t.string   "city"
@@ -21,12 +21,14 @@ ActiveRecord::Schema.define(version: 20160712203600) do
     t.text     "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.integer  "user_id"
   end
 
   create_table "data_counters", force: :cascade do |t|
     t.integer  "qty"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.integer  "water_counter_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -56,6 +58,7 @@ ActiveRecord::Schema.define(version: 20160712203600) do
     t.string   "type"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+    t.integer  "adresses_id"
   end
 
 end
