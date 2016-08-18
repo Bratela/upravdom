@@ -9,6 +9,9 @@ gem 'font-awesome-rails'
 # гем с русскими форматами (времени и пр.)
 gem 'russian'
 
+# для оформления форм https://github.com/plataformatec/simple_form
+# Туториал по теме http://railscasts.com/episodes/234-simple-form
+gem 'simple_form'
 
 gem 'font-awesome-rails'
 
