@@ -13,7 +13,6 @@ gem 'russian'
 # Туториал по теме http://railscasts.com/episodes/234-simple-form
 gem 'simple_form'
 
-gem 'font-awesome-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
